@@ -38,7 +38,7 @@ class Artist
   def self.find(id)
     found_artist = nil
     @@artists.each() do |artist|
-      if artist.id().eql?(id)
+      if artist.id().eql?(id.to_i())
         found_artist = artist
       end
     end

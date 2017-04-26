@@ -34,7 +34,7 @@ class CD
   def self.find(id)
     found_cd = nil
     @@cds.each() do |cd|
-      if cd.id().eql?(id)
+      if cd.id().eql?(id.to_i)
         found_cd = cd
       end
     end

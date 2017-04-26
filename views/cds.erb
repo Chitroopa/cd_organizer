@@ -1,0 +1,8 @@
+<h1>CDs</h1>
+
+<h3>Here are the CDs that you own:</h3>
+<ul>
+  <% @cds.each() do |cd| %>
+    <li><a href="/cds/<%= cd.id() %>"><%= cd.title() %></li>
+  <% end %>
+</ul>

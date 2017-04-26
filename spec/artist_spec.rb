@@ -15,8 +15,6 @@ describe('Artist') do
   describe('.find') do
     it("returns the object based on ID") do
       new_artist = Artist.new("Test artist")
-      new_cd = CD.new("test cd title",13)
-      new_artist.add_cd(new_cd)
       new_artist.save()
       expect(Artist.find(new_artist.id())).to eq(new_artist)
     end
